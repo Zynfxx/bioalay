@@ -2,10 +2,10 @@
   "name": "nodemailer-example",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "sendemail.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js"
+    "dev": "nodemon sendemail.js",
+    "start": "node sendemail.js"
   },
   "keywords": [],
   "author": "",

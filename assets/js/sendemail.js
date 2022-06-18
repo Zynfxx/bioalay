@@ -47,7 +47,7 @@ app.post('/send-email', jsonParser, async (req, res) => {
     `;
 
     const transporter = nodemailer.createTransport({
-        host: 'mail.lalemanllc.com',
+        host: 'smtp.gmail.com',
         port: 465,
         secure: true,
         auth: {
@@ -60,7 +60,7 @@ app.post('/send-email', jsonParser, async (req, res) => {
     });
 
     const info = await transporter.sendMail({
-        from: `"${name}" <test@lalemanllc.com>`, // sender address,
+        from: `"${name}" <admin@zynfx.site>`, // sender address,
         to: `${correo}`,
         subject:`${email}`,
         html: contentHTML
